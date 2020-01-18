@@ -1,0 +1,354 @@
+/*
+****COLORS****
+Primary Purple: #
+Secondary Secondary Purple: #
+Off-White: #F7F7FF
+
+****FONTS****
+font-family: 'Crete Round', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body {
+	/*Add font family*/
+	font-family: 'Roboto', serif;
+	margin: 0;
+	background: #2A0049;
+	color: #F4F1EB;
+}
+
+h1 {
+	/*Add font family*/
+	font-family: 'Roboto', serif;
+	color: #F4F1EB;
+	font-size: 80px;
+	margin: 20px;
+	text-shadow: 2px 2px #01161E;
+}
+
+ul {
+
+}
+
+
+#navbar {
+	position: fixed;
+	z-index: 100;
+	width: 60px;
+	height: 100%;
+	background: #632491;
+	font-family: 'Roboto', serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-right: 2px solid #F7F7FF;
+
+}
+
+#logo{
+	font-family: 'Crete Round', serif;
+	position: fixed;
+	font-size: 20px;
+	border: 2px solid #F7F7FF;
+	padding: 2px;
+	left: 1%;
+	top: 2%;
+
+}
+
+.nav-content {
+	float: left;
+	color: #F7F7FF;
+	padding: 5%;
+  position:absolute;
+  font-family: 'Roboto', serif;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.a-z{
+	width: 57px;
+	height:20px;
+	padding: 2px;
+	text-align: center;
+	transform: translateX(-3px);
+	transition: .3s;
+
+}
+
+.a-z:hover {
+  color: #632491;
+  transition: .5s;
+  background-color: #F7F7FF;
+  cursor: pointer;
+}
+
+#page-container {
+  position: relative;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+#welcome-bar {
+  top: 20%;
+  letter-spacing: 2px;
+  display: flex;
+}
+
+#search-bar {
+  position: relative;
+  height: 30px;
+  margin-top: 20%;
+  margin-bottom: 6%;
+  padding:50px;
+}
+
+#search{
+	border-radius: 20px;
+	width: 500px;
+	height: 30px;
+	background-color: #F7F7FF;
+
+}
+
+.search-button {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  background-color: #BA7AE8;
+  height: 25px;
+  width: 65px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#lp-search{
+	border-radius: 20px;
+	width: 150px;
+	height: 25px;
+	background-color: #F7F7FF;
+
+}
+
+#lp-search:hover{
+	background-color: #D194FC;
+	transition: .5s;
+}
+
+#lp-search:focus{
+	background-color: #BA7AE8;
+	transition: .2s;
+}
+
+#search:hover{
+	background-color: #D194FC;
+	transition: .5s;
+}
+
+#search:focus{
+	background-color: #BA7AE8;
+	transition: .2s;
+}
+
+#submit-button {
+  position: relative;
+  background-color: #BA7AE8;
+  height: 25px;
+  width: 115px;
+  border-radius: 10px;
+  margin-bottom: 75px;
+}
+
+#submit-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.submitted-by {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sb-content {
+  position: absolute;
+  left: 10%;
+  top: 10%
+}
+
+.navsfc {
+  display: flex;
+  flex-direction: row;
+}
+
+.sfc {
+  margin: 10px;
+  padding-bottom: 25px;
+}
+
+.sfc:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pp-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.pp-content {
+  margin: 10px;
+}
+
+.pp-content:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#copyright {
+  margin-top: 20px;
+}
+
+.copyright-content {
+  text-align: center
+}
+
+#whats-hot {
+  position: fixed;
+  right:0px;
+  top: 0px;
+  width: 25%;
+  height: 100%;
+  z-index: 1;
+  background: #632491;
+}
+
+.whats-hot-title {
+  position: absolute;
+  top: 30px;
+  left: 9%;
+  height: 8%;
+  width: 85%;
+  background-color: linear-gradient(60deg, #6E0AB5, #BA7AE8);
+  font-size: 50px;
+  text-align: center;
+}
+
+.whats-hot-images {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  transform: translate(15%, 30%);
+}
+
+#whats-hot-content {
+  position: relative;
+  bottom: 47%;
+  left: 45%
+}
+
+.hot-images {
+  position:relative;
+  margin-bottom: 35px;
+}
+
+.hot-images:hover {
+  cursor: pointer;
+}
+
+.hot-artist {
+  position: relative;
+  margin-bottom: 120px;
+  color: #DEDCD6;
+  z-index: 1;
+  text-decoration: underline;
+}
+
+.hot-artist:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.hot-album {
+  position: relative;
+  bottom: 530px;
+  margin-bottom: 120px;
+}
+
+#lyric-page-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#song-title {
+  position: absolute;
+  top: 10%;
+}
+
+#song-pics {
+  display: flex;
+  flex-direction: row;
+}
+
+.album-pic {
+  position: relative;
+  top: 30%;
+  padding-left: 250px;
+  padding-right: 250px;
+  margin-top: 10%;
+}
+
+#lp-search-bar {
+  position:absolute;
+  left: 85%;
+  top: 5%;
+}
+
+#submit-corrections {
+  position: absolute;
+  background-color: #BA7AE8;
+  height: 25px;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  left: 85%;
+  top: 17%;
+}
+
+#submit-corrections:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.song-lyrics {
+  font-family: 'Roboto', serif;
+}
+
+.lyrics {
+  margin-bottom: 50px;
+}
+
+input {
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+input:focus {
+	outline: none;
+  background-color: #BA7AE8;
+}
